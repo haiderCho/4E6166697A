@@ -400,6 +400,9 @@ figure {
 }
 
 .nhc-social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
 }
@@ -1495,24 +1498,21 @@ input[type="text"] {
 }
 
 .social {
-  height: 4vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 0 7.5vw 0;
-  position: relative;
-  top: -1.5vw;
-  z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .social-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-text);
-  font-size: 2.25vw;
-  font-family: var(--font-links);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 
 .social-item .icon {
